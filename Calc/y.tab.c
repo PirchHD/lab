@@ -1723,5 +1723,5 @@ int yyerror(char *s) {
 }
 
 int main(void) {
-  yylex();
+  yyparse();
 }

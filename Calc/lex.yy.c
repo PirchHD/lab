@@ -730,7 +730,7 @@ YY_DECL
 		}
 
 	{
-#line 23 "calc.l"
+#line 20 "calc.l"
 
 
 #line 737 "lex.yy.c"
@@ -792,12 +792,12 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 25 "calc.l"
+#line 22 "calc.l"
 { /* We ignore white characters */ }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 27 "calc.l"
+#line 24 "calc.l"
 {
 		  yylval=atof(yytext);
 		  return(NUMBER);
@@ -805,9 +805,9 @@ YY_RULE_SETUP
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 32 "calc.l"
+#line 29 "calc.l"
 {
-	int wynik = 0;
+int wynik = 0;
 char tabA[yyleng];
 char tabB[yyleng];
 char tabC[yyleng];
@@ -870,93 +870,93 @@ char tabC[yyleng];
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 95 "calc.l"
+#line 93 "calc.l"
 return(PLUS);
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 96 "calc.l"
+#line 94 "calc.l"
 return(MINUS);
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 97 "calc.l"
+#line 95 "calc.l"
 return(MULT);
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 98 "calc.l"
+#line 96 "calc.l"
 return(DIV);
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 99 "calc.l"
+#line 97 "calc.l"
 return(LP);
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 100 "calc.l"
+#line 98 "calc.l"
 return(RP);
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 101 "calc.l"
+#line 99 "calc.l"
 return(OR);
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 102 "calc.l"
+#line 100 "calc.l"
 return(AND);
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 103 "calc.l"
+#line 101 "calc.l"
 return(IMP);
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 104 "calc.l"
+#line 102 "calc.l"
 return(POT);
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 105 "calc.l"
+#line 103 "calc.l"
 return(PIERW);
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 106 "calc.l"
+#line 104 "calc.l"
 return(SIN);
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 107 "calc.l"
+#line 105 "calc.l"
 return(COS);
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 108 "calc.l"
+#line 106 "calc.l"
 return(TAN);
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 109 "calc.l"
+#line 107 "calc.l"
 return(LINE);
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 110 "calc.l"
+#line 108 "calc.l"
 return(LOG);
 	YY_BREAK
 case 20:
 /* rule 20 can match eol */
 YY_RULE_SETUP
-#line 112 "calc.l"
+#line 110 "calc.l"
 return(END);
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 113 "calc.l"
+#line 111 "calc.l"
 ECHO;
 	YY_BREAK
 #line 963 "lex.yy.c"
@@ -1964,4 +1964,4 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 113 "calc.l"
+#line 111 "calc.l"

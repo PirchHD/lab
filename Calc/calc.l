@@ -8,17 +8,14 @@
 int a,b,c;
 %}
 
+
 white		[ \t]+
 
 digit		[0-9]
 real 		([1-9][0-9]*|0)(\.[0-9]+)?((e|E)(\+|\-)?[0-9]+)?
 integer 	{digit}+
 
-A ({real})
-B ({real})
-C ({real})
-delta ({A}[x][/^][2])[+-]({B}[x])[+-]({C})
-
+delta ({real}[x][/^][2])[+-]({real}[x])[+-]({real})
 
 %%
 
@@ -30,7 +27,7 @@ delta ({A}[x][/^][2])[+-]({B}[x])[+-]({C})
 		}
 
 {delta} {
-	int wynik = 0;
+int wynik = 0;
 char tabA[yyleng];
 char tabB[yyleng];
 char tabC[yyleng];
@@ -90,6 +87,7 @@ char tabC[yyleng];
 	}
 
 }
+
 
 
 "+"		return(PLUS);
